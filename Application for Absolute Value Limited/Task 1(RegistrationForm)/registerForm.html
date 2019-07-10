@@ -1,0 +1,135 @@
+<!-- A simple responsive registration form – without any logic, just HTML + CSS, you can use any design framework. The goal is that the registration form labels and inputs must be in single line. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+    <!-- Customized CSS-->
+    <link rel="stylesheet" type="text/css" href="registerForm.css">
+
+
+    <title>Register Form</title>
+</head>
+
+<body>
+    
+
+    <div class="container justify-content-between">
+        <div class="row">
+            <h1 class="mx-auto">Register Form</h1>
+        </div>
+        <!-- <form> 
+            <div class="form-group" >
+                <label for="exampleInputEmail1">Email address</label> 
+                <input type="email"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> 
+            </div> 
+
+            <div class="form-group"> 
+                <label for="exampleInputPassword1">Password</label> 
+                <input type="password"  id="exampleInputPassword1" placeholder="Password"> 
+            </div> 
+            <div class="form-group form-check"> 
+                <input type="checkbox" class="form-check-input" id="exampleCheck1"> 
+                <label class="form-check-label" for="exampleCheck1">Check me out</label> 
+            </div> 
+            <button type="submit" class="btn btn-primary">Submit</button> 
+        </form> -->
+
+        <form action="http://wikipedia.org" method="GET">
+
+
+            <!-- This is name section -->
+            <div class="form-row required">
+                <div class="col-md-6">
+                    <label for="FirstName">FirstName:</label>
+                    <input id="FirstName" type="text" placeholder="Andy" class="fNInput" required>
+                </div>
+				<div class="col-md-6">
+                    <label for="LastName">LastName:</label>
+                    <input id="LastName" type="text" placeholder="Zhu" class="lNInput" required>
+                </div>
+            </div>
+            <!-- <div class="form-row"> -->
+                
+            <!-- </div> -->
+
+
+            <!-- Setting email and password -->
+            <div class="form-row required">
+                <div class="col-md-6">
+                    <label for="Email">Email Address:</label>
+                    <input id="Email" type="email" placeholder="abc123@site.com" class="emailInput"  required>
+                </div>
+				<div class="col-md-6">
+                    <label for="Password">Password:</label>
+                    <input id="Password" type="password" placeholder="password" class="passwordInput" minlength="6" required>
+                </div>
+            </div>
+
+
+
+            <!-- Address -->
+            <div class="form-row">
+                <div class="col-md-6">
+                    <label for="inputAddress">Address:</label>
+                    <input id="inputAddress" type="text" placeholder="1234 Queen St" class="addressInput">
+                </div>
+            <!-- Birthday -->
+                <div class="col-md-6">
+					<label for="birthday">Birthday:</label> 
+					<select name="birthday_month" id="birthday">
+						<option value="" disabled="disabled" selected="selected">Month</option>
+						<option value="Jan">Jan</option>
+						<option value="Feb">Feb</option>
+						<option value="March">March</option>
+					</select>
+					<select name="birthday_day" id="birthday">
+						<option value="" disabled="disabled" selected="selected">Day</option>
+						<option value="Mon">Mon</option>
+						<option value="Tue">Tue</option>
+						<option value="Wed">Wed</option>
+					</select>
+					<select name="birthday_year" id="birthday">
+						<option value="" disabled="disabled" selected="selected">Year</option>
+						<option value="1999">1999</option>
+						<option value="1998">1998</option>
+						<option value="1997">1997</option>
+					</select>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- </div class="form-row">
+                <div class="col-md-12">
+                    <label for="termsConditions">I agree to the terms and conditions:</label>
+                    <input id="termsConditions" value="agreed" type="checkbox" required>
+                </div>
+            </div> -->
+			
+			
+			
+			<!-- Terms and conditions -->
+            <div class="form-row form-check1 required">
+                <label  for="termsConditions">I agree to the terms and conditions:</label>
+                <input type="checkbox" id="termsConditions" class ="ml-2" required>  
+            </div>
+
+            <!-- Submit -->
+            <div class="col pl-0">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            
+
+        </form>
+    </div>
+</body>
+</html>

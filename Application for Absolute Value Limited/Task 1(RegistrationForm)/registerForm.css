@@ -1,0 +1,31 @@
+.form-check1 {
+    position: relative;
+    display: block;
+    margin-left: 0.05rem;
+} 
+
+.fNInput{
+    width:10.8rem;
+}
+
+.lNInput{
+    width:10.9rem;
+}
+
+.emailInput{
+    width:9.05rem;
+}
+
+.passwordInput{
+    width:11.1rem;
+}
+
+.addressInput{
+    width:12.4rem;
+}
+
+.required label:after {
+    color: #e32;
+    content: ' *';
+    display:inline;
+}
